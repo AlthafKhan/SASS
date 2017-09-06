@@ -1,0 +1,34 @@
+//to import files with .css and .scss
+import "form.css"
+import "app.sass"
+
+//declaring variables
+$paracolor: green;
+$fontsize: 30px;
+$headercolor: blue;
+$imgpath: '/img';
+
+p {
+    color: $paracolor;
+    font-size: $fontsixe+20px
+}
+
+h1{
+    color: lighten($headercolor, 25%);
+}
+
+body {
+    background-image: url($imgpath+"1.jpg");
+}
+
+div {
+    background-image: url("#{$imgpath}2.jpg");
+}
+
+$className : 'cls';
+
+.#($className)_para {
+    border: 1px solid red;
+}
+
+
